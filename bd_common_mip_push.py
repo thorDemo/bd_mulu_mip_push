@@ -104,7 +104,7 @@ def create_all_urls(thread_num, site, post_list, post_num, token, https):
                 target_url = 'http://' + site + '/' + post_list + value + '/\n'
                 post_url.write(target_url)
     post_url.close()
-    # post_all_url(thread_num, site, token, target_path, post_list)
+    post_all_url(thread_num, site, token, target_path, post_list)
 
 
 def print_time():
