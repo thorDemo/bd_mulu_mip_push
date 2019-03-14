@@ -101,7 +101,7 @@ def create_all_urls(thread_num, site, post_list, post_num, token, https):
         else:
             for num in range(0, this_num):
                 value = rand_char()
-                target_url = 'http://' + site + '/' + post_list + value + '/\n'
+                target_url = 'https://' + site + '/' + post_list + '/' + now_time + value + '.html\n'
                 post_url.write(target_url)
     post_url.close()
     post_all_url(thread_num, site, token, target_path, post_list)
